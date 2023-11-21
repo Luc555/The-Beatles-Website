@@ -625,7 +625,15 @@ Albums Page Style
 
 .album-content-container{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
+.album-content-container-lg{
+  width: 400px;
+}
+
+
 
 
 @media (prefers-color-scheme: dark) {

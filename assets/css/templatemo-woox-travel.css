@@ -627,14 +627,57 @@ Albums Page Style
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 .album-content-container-lg{
   width: 400px;
 }
 
+.album-content-container-lg{
+  padding-left: 20px;
+  margin-top: 26px;
+  margin-left: 26px;
+  margin-bottom: 50px;
+}
 
+.text{
+  text-align: center;
+  margin-bottom: 12px;
+}
+.pre-title{
+  font-style: normal;
+  font-weight: 400;
+  font-family: futura-pt,sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #579a18;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 
+}
+
+.title{
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: white;
+}
+.name-link{
+  color: white;
+}
+
+.title:hover{
+  color: red;
+  text-decoration: underline;
+}
+
+.name-link:hover{
+  color: red;
+  cursor: pointer;
+
+}
 
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
@@ -646,185 +689,57 @@ Albums Page Style
 
 /* 
 ---------------------------------------------
-Deals Page Style
+Curiosidades Page Style
 --------------------------------------------- 
 */
 
 .page-heading {
-  background-image: url(../images/heading-bg.jpg);
-  background-position: center center;
+  background-image: url(../images/the-beatles-curiosity.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 260px 0px 190px 0px;
   text-align: center;
-}
 
-.page-heading h4 {
-  font-size: 20px;
-  font-weight: 500;
-  color: #fff;
-  margin-bottom: 20px;
 }
 
 .page-heading h2 {
   font-size: 50px;
   font-weight: 700;
+  margin: 00px 150px 0px 150px;
   color: #fff;
   margin-bottom: 30px;
+  line-height: 50px;
 }
 
-.page-heading a {
-  border-color: #fff;
-  color: #fff;
+.MsoNormal{
+  margin: 30px 70px 0px 250px;
+  font-family: Garamond, serif;
+  font-size: 30px;
+  text-align: justify;
+
 }
 
-.page-heading a:hover {
-  border-color: #22b3c1;
+.separator{
+  margin-bottom: 70px;
 }
 
-.search-form #search-form {
-  background-color: #22b3c1;
-  border-bottom-left-radius: 23px;
-  border-bottom-right-radius: 23px;
-  padding: 35px 60px;
+.text-mark{
+  color: green;
+}
+.curiosity-content{
+  margin-bottom: 200px;
 }
 
-.search-form #search-form h4 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 10px;
-}
-
-.search-form #search-form select {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  border-bottom: 1px solid #fff;
-  border-radius: 0px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 300;
-  width: 100%;
-  cursor: pointer;
-}
-
-.search-form #search-form option {
-  background-color: #1ea0ad;
-}
-
-.search-form #search-form button {
-  width: 100%;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-  padding: 8px 30px;
-  display: inline-block;
-  border-radius: 25px;
-  font-weight: 500;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-}
-
-.search-form #search-form button:hover {
-  background-color: #fff;
-  color: #22b3c1;
-}
-
-.amazing-deals {
-  margin-top: 120px;
-}
-
-.amazing-deals .image {
-  border-top-left-radius: 23px;
-  border-bottom-left-radius: 23px;
-  overflow: hidden;
-}
-
-.amazing-deals {
-  background-color: #f7f7f7;
-  border-radius: 23px;
-  padding-right: 30px;
-  margin-bottom: 30px;
-}
-
-.amazing-deals span.info {
-  color: #22b3c1;
-  font-size: 15px;
-  margin-bottom: 20px;
+.curiosity-content-span-list-paragraph{
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
   display: block;
-}
-
-.amazing-deals h4 {
-  font-size: 20px;
-  font-weight: 700;
-  padding-bottom: 25px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.amazing-deals i {
-  color: #777;
-  margin-right: 5px;
-}
-
-.amazing-deals span.list {
-  font-size: 15px;
-  color: #afafaf;
-  font-weight: 500;
-}
-
-.amazing-deals .content {
-  padding: 30px 0px;
-}
-
-.amazing-deals p {
-  padding-top: 25px;
-  margin-top: 10px;
-  border-top: 1px solid #ddd;
-  margin-bottom: 30px;
-}
-
-.amazing-deals ul.page-numbers {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.amazing-deals ul.page-numbers li {
-  display: inline-block;
-  margin: 0px 5px;
-}
-
-.amazing-deals ul.page-numbers li a {
-  display: inline-block;
-  width: 46px;
-  height: 46px;
-  border: 1px solid #22b3c1;
-  line-height: 44px;
-  color: #22b3c1;
-  text-align: center;
+  color: white;
   font-size: 18px;
-  font-weight: 500;
-  border-radius: 50%;
-  transition: all .3s;
 }
 
-.amazing-deals ul.page-numbers li.active a,
-.amazing-deals ul.page-numbers li a:hover {
-  background-color: #22b3c1;
-  color: #fff;
-}
-
-.amazing-deals ul.page-numbers li:first-child a,
-.amazing-deals ul.page-numbers li:last-child a {
-  border: none;
-}
 
 
 /* 

@@ -417,89 +417,120 @@ footer p a:hover {
     }
 }
 
-  .name-title-lucas{
+/* 
+---------------------------------------------
+Albums Page Style
+--------------------------------------------- 
+*/
+
+.album-main-content {
+    margin-top: 70px;
+    background-image: url(../images/beatles-apple-corp.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 130px 0px 200px 0px;
+  }
+  
+  .blur-bg {
+      width: 100%;
+    height: 100%;
+    background: url(../images/beatles-apple-corp.webp) no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px) brightness(80%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .album-main-content .content {
+    border-radius: 23px;
     text-align: center;
-    color: #f65921 !important;
+    padding: 120px 60px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .album-main-content .content h2 {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  
+  .album-content-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  
+  .album-content-container-lg{
+    width: 400px;
+  }
+  
+  .album-content-container-lg{
+    padding-left: 20px;
+    margin-top: 26px;
+    margin-left: 26px;
+    margin-bottom: 50px;
+  }
+  
+  .text{
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .text-sgt{
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: -23px;
+    width: 350px;
   }
 
+  
 
-.about-cotent-container-text-authors-title{
-    color: white !important;
-    margin: 50px 0px 20px 50px;
-}
-
-.about-cotent-container-text{
-    margin: 90px 70px 20px 30px;
-}
-.about-cotent-container-text-title{
-    color: white !important;
-    margin-bottom: 15px;
-}
-.about-cotent-container-text-paragraph{
-    color: white !important;
-}
-
-.lucas-picture{
-    width: 319px;
-    height: 319px;
-    --animation-custom_in-translate_x: 50px;
-    --animation-custom_in-translate_y: 0px;
-    --animation-custom_in-opacity: 0;
-    --animation-custom_in-rotate: 180deg;
-    --animation-custom_in-scale: 0.3;
-    margin: 20px auto 0;
-    border-radius: 50% !important;
-    border-color: #555c66;
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.lucas{
-    margin-bottom: 100px;
-}
-
-.about-cotent-container-text-authors-text{
-    text-align: center;
-}
-
-.about-cotent-container-text-authors-text-fa-paragraph{
-    font-size: 18px;
-    line-height: 24px;
-    font-family: Inter,sans-serif;
-    line-height: 2;
-    color: white !important;
-    width: 813px;
-    --animation-custom_in-translate_x: 0px;
-    --animation-custom_in-translate_y: 300px;
-    margin: 20px auto 0
-}
-
-
-
-.nicolas-picture{
-    width: 319px;
-    height: 319px;
-    --animation-custom_in-translate_x: 50px;
-    --animation-custom_in-translate_y: 0px;
-    --animation-custom_in-opacity: 0;
-    --animation-custom_in-rotate: 180deg;
-    --animation-custom_in-scale: 0.3;
-    margin: 20px auto 0;
-    border-radius: 50% !important;
-    border-color: #555c66;
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.name-title-nicolas{
-    text-align: center;
-    color: #f65921 !important;
+  .pre-title{
+    font-style: normal;
+    font-weight: 400;
+    font-family: futura-pt,sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    color: #579a18;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  
   }
-
-.nicolas{
-    margin-bottom: 100px;
-}
+  
+  .title{
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    color: white;
+  }
+  .name-link{
+    color: white;
+  }
+  
+  .title:hover{
+    color: red;
+    text-decoration: underline;
+  }
+  
+  .name-link:hover{
+    color: red;
+    cursor: pointer;
+  
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      background: #232223;
+      color: white;
+    }
+  }
+  

@@ -417,89 +417,239 @@ footer p a:hover {
     }
 }
 
-  .name-title-lucas{
-    text-align: center;
-    color: #f65921 !important;
-  }
 
+/* 
+---------------------------------------------
+Fab Four Page Style
+--------------------------------------------- 
+*/
 
-.about-cotent-container-text-authors-title{
-    color: white !important;
-    margin: 50px 0px 20px 50px;
-}
-
-.about-cotent-container-text{
-    margin: 90px 70px 20px 30px;
-}
-.about-cotent-container-text-title{
-    color: white !important;
-    margin-bottom: 15px;
-}
-.about-cotent-container-text-paragraph{
-    color: white !important;
-}
-
-.lucas-picture{
-    width: 319px;
-    height: 319px;
-    --animation-custom_in-translate_x: 50px;
-    --animation-custom_in-translate_y: 0px;
-    --animation-custom_in-opacity: 0;
-    --animation-custom_in-rotate: 180deg;
-    --animation-custom_in-scale: 0.3;
-    margin: 20px auto 0;
-    border-radius: 50% !important;
-    border-color: #555c66;
-    display: block;
+.second-page-heading {
+    background-image: url(../images/giphy.gif);
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-
-}
-
-.lucas{
-    margin-bottom: 100px;
-}
-
-.about-cotent-container-text-authors-text{
+    padding: 260px 0px 190px 0px;
     text-align: center;
-}
-
-.about-cotent-container-text-authors-text-fa-paragraph{
+  }
+  
+  .second-page-heading h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 30px;
+  }
+  .fab-four-info-opening-text{
+    color:white;
     font-size: 18px;
-    line-height: 24px;
-    font-family: Inter,sans-serif;
-    line-height: 2;
-    color: white !important;
-    width: 813px;
-    --animation-custom_in-translate_x: 0px;
-    --animation-custom_in-translate_y: 300px;
-    margin: 20px auto 0
-}
-
-
-
-.nicolas-picture{
-    width: 319px;
-    height: 319px;
-    --animation-custom_in-translate_x: 50px;
-    --animation-custom_in-translate_y: 0px;
-    --animation-custom_in-opacity: 0;
-    --animation-custom_in-rotate: 180deg;
-    --animation-custom_in-scale: 0.3;
-    margin: 20px auto 0;
-    border-radius: 50% !important;
-    border-color: #555c66;
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.name-title-nicolas{
-    text-align: center;
-    color: #f65921 !important;
+    margin: 70px 250px 0px 40px;
   }
-
-.nicolas{
-    margin-bottom: 100px;
-}
+  
+  .fab-four-info-bio{
+    display: block;
+    margin: 0px 40px 100px 40px;
+    text-align: center;
+  }
+  
+  .john-title{
+    color:white;
+    font-size: 36px;
+    margin-top: 70px;
+    padding: 0px 0px 0px 32px;
+  }
+  
+  .john-first-text{
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 70px;
+    margin-inline-end: 70px;
+    display: block;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .john-image{
+    position: relative;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 700px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .john-last-image{
+    position: relative;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .john-second-text{
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 70px;
+    margin-inline-end: 70px;
+    display: block;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .paul-title{
+    color:white;
+    font-size: 36px;
+    margin-top: 70px;
+    padding: 0px 0px 0px 32px;
+  }
+  
+  .paul-first-text{
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 70px;
+    margin-inline-end: 70px;
+    display: block;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .paul-image{
+    position: relative;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 700px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .paul-last-image{
+    position: relative;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .paul-second-text{
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 70px;
+    margin-inline-end: 70px;
+    display: block;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .george-title{
+    color:white;
+    font-size: 36px;
+    margin-top: 70px;
+    padding: 0px 0px 0px 32px;
+  }
+  
+  .george-first-text{
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 70px;
+    margin-inline-end: 70px;
+    display: block;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .george-image{
+    position: relative;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 700px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .george-last-image{
+    position: relative;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .george-second-text{
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 70px;
+    margin-inline-end: 70px;
+    display: block;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .ringo-title{
+    color:white;
+    font-size: 36px;
+    margin-top: 70px;
+    padding: 0px 0px 0px 32px;
+  }
+  
+  .ringo-first-text{
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 70px;
+    margin-inline-end: 70px;
+    display: block;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 38px;
+  }
+  
+  .ringo-image{
+    position: relative;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 700px;
+    width: 60%;
+    margin: auto;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ringo-last-image{
+    position: relative;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ringo-second-text{
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 70px;
+    margin-inline-end: 70px;
+    display: block;
+    color: white;
+    font-size: 18px;
+  }
+  

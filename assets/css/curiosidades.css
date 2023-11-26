@@ -417,89 +417,60 @@ footer p a:hover {
     }
 }
 
-  .name-title-lucas{
-    text-align: center;
-    color: #f65921 !important;
-  }
 
+/* 
+---------------------------------------------
+Curiosidades Page Style
+--------------------------------------------- 
+*/
 
-.about-cotent-container-text-authors-title{
-    color: white !important;
-    margin: 50px 0px 20px 50px;
-}
-
-.about-cotent-container-text{
-    margin: 90px 70px 20px 30px;
-}
-.about-cotent-container-text-title{
-    color: white !important;
-    margin-bottom: 15px;
-}
-.about-cotent-container-text-paragraph{
-    color: white !important;
-}
-
-.lucas-picture{
-    width: 319px;
-    height: 319px;
-    --animation-custom_in-translate_x: 50px;
-    --animation-custom_in-translate_y: 0px;
-    --animation-custom_in-opacity: 0;
-    --animation-custom_in-rotate: 180deg;
-    --animation-custom_in-scale: 0.3;
-    margin: 20px auto 0;
-    border-radius: 50% !important;
-    border-color: #555c66;
-    display: block;
+.page-heading {
+    background-image: url(../images/john-lennon-the-beatles.gif);
     background-size: cover;
     background-repeat: no-repeat;
-
-}
-
-.lucas{
-    margin-bottom: 100px;
-}
-
-.about-cotent-container-text-authors-text{
+    padding: 260px 0px 190px 0px;
     text-align: center;
-}
-
-.about-cotent-container-text-authors-text-fa-paragraph{
+  
+  }
+  
+  .page-heading h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 00px 150px 0px 150px;
+    color: #fff;
+    margin-bottom: 30px;
+    line-height: 50px;
+  }
+  
+  .MsoNormal{
+    margin: 30px 70px 0px 250px;
+    font-family: Garamond, serif;
+    font-size: 30px;
+    text-align: justify;
+    color: white;
+  
+  }
+  
+  .separator{
+    margin-bottom: 70px;
+  }
+  
+  .text-mark{
+    color: green;
+  }
+  .curiosity-content{
+    margin-bottom: 200px;
+  }
+  
+  .curiosity-content-span-list-paragraph{
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 70px;
+    margin-inline-end: 70px;
+    display: block;
+    color: white;
     font-size: 18px;
-    line-height: 24px;
-    font-family: Inter,sans-serif;
-    line-height: 2;
-    color: white !important;
-    width: 813px;
-    --animation-custom_in-translate_x: 0px;
-    --animation-custom_in-translate_y: 300px;
-    margin: 20px auto 0
-}
-
-
-
-.nicolas-picture{
-    width: 319px;
-    height: 319px;
-    --animation-custom_in-translate_x: 50px;
-    --animation-custom_in-translate_y: 0px;
-    --animation-custom_in-opacity: 0;
-    --animation-custom_in-rotate: 180deg;
-    --animation-custom_in-scale: 0.3;
-    margin: 20px auto 0;
-    border-radius: 50% !important;
-    border-color: #555c66;
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.name-title-nicolas{
-    text-align: center;
-    color: #f65921 !important;
   }
-
-.nicolas{
-    margin-bottom: 100px;
-}
+  
+  
+  

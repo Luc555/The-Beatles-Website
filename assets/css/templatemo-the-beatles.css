@@ -126,6 +126,32 @@ body {
   
 }
 
+.fab_button_john{
+  font-size: 14px;
+  color: #22b3c1;
+  background-color: transparent;
+  border: 1px solid #22b3c1;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+.fab_button_john:hover{
+  background-color: #22b3c1;
+  color: rgb(235, 224, 224);
+  cursor: pointer;
+  
+}
+
 
 section {
   margin-top: 120px;
@@ -160,7 +186,7 @@ Header Style
 
 .header-area {
   background-color: #22b3c1;
-  position: absolute;
+  position: fixed;
   height: 70px;
   top: 0;
   left: 0;
@@ -189,7 +215,7 @@ Header Style
   justify-content: center;
   vertical-align: middle;
   margin-top: 15px;
-  margin-left: 260px;
+  margin-left: 300px;
 }
 
 .header-area .main-nav .nav li a {
@@ -204,12 +230,61 @@ Header Style
   letter-spacing: 0.5px;
 }
 
+
 .logo{
   width: 130px;
   position:absolute;
   margin-top: -28px;
 }
 
+/* 
+---------------------------------------------
+Cookie Style
+--------------------------------------------- 
+*/
+
+.CookieMessage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #121212;
+  z-index: 999;
+  display: none;
+}
+
+.CookieMessage-content {
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 12px;
+
+}
+
+.CookieMessage-content a{
+  color: white;
+}
+
+.CookieMessage-content p{
+  margin: 0 0 20px 0;
+}
+
+.CookieMessage-button {
+  background: #00C2FF;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+
+}
+
+.CookieMessage-button:hover{
+  background: #5cd9ff;
+}
 
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
@@ -263,11 +338,6 @@ Header Style
     height: 100px;
     box-shadow: none;
     text-align: center;
-  }
-
-  
-
-  .header-area{
     margin-left: 0px;
   }
   .header-area .menu-trigger {
@@ -694,7 +764,7 @@ Curiosidades Page Style
 */
 
 .page-heading {
-  background-image: url(../images/the-beatles-curiosity.png);
+  background-image: url(../images/john-lennon-the-beatles.gif);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 260px 0px 190px 0px;
@@ -716,6 +786,7 @@ Curiosidades Page Style
   font-family: Garamond, serif;
   font-size: 30px;
   text-align: justify;
+  color: white;
 
 }
 
@@ -744,12 +815,12 @@ Curiosidades Page Style
 
 /* 
 ---------------------------------------------
-Reservation Page Style
+Fab Four Page Style
 --------------------------------------------- 
 */
 
 .second-page-heading {
-  background-image: url(../images/heading-bg-02.jpg);
+  background-image: url(../images/giphy.gif);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -757,154 +828,224 @@ Reservation Page Style
   text-align: center;
 }
 
-.second-page-heading h4 {
-  font-size: 20px;
-  font-weight: 500;
-  color: #fff;
-  margin-bottom: 15px;
-  position: relative;
-  padding-bottom: 25px;
-}
-
-.second-page-heading h4::after {
-  position: absolute;
-  width: 100px;
-  height: 2px;
-  background-color: rgba(250, 250, 250, 0.3);
-  content: '';
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50px);
-}
-
 .second-page-heading h2 {
   font-size: 50px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.fab-four-info-opening-text{
+  color:white;
+  font-size: 18px;
+  margin: 70px 250px 0px 40px;
 }
 
-.second-page-heading p {
-  padding: 0px 15%;
-  color: #fff;
-  margin-bottom: 30px;
-}
-
-.second-page-heading .main-button a {
-  border-color: #fff;
-  color: #22b3c1;
-  background-color: #fff;
-}
-
-.second-page-heading .main-button a:hover {
-  border-color: #22b3c1;
-  background-color: #22b3c1;
-  color: #fff;
-}
-
-.reservation-info {
-  margin-top: -99px;
-}
-
-.more-info {
-  background-color: #fff;
-  border-radius: 23px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+.fab-four-info-bio{
+  display: block;
+  margin: 0px 40px 100px 40px;
   text-align: center;
-  padding: 30px;
 }
 
-.more-info i {
-  background-color: #f0f0f0;
-  width: 60px;
-  height: 60px;
-  display: inline-block;
-  text-align: center;
-  line-height: 60px;
-  border-radius: 50px;
-  color: #22b3c1;
-  font-size: 20px;
-  margin-bottom: 20px;
+.john-title{
+  color:white;
+  font-size: 36px;
+  margin-top: 70px;
+  padding: 0px 0px 0px 32px;
 }
 
-.more-info h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
+.john-first-text{
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
+  display: block;
+  color: white;
+  font-size: 18px;
 }
 
-.more-info a {
-  font-size: 15px;
-  color: #22b3c1;
-}
-
-.reservation-form {
-  margin: 120px 0px;
-}
-
-.reservation-form #map {
-  margin-bottom: -6px;
-}
-
-.reservation-form #reservation-form h4 {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.reservation-form #reservation-form h4 em {
-  font-style: normal;
-  color: #22b3c1;
-}
-
-.reservation-form #reservation-form {
-  padding: 60px 120px;
-  background-color: #f9f9f9;
-  border-bottom-right-radius: 23px;
-  border-bottom-left-radius: 23px;
-}
-
-.reservation-form #reservation-form label {
-  font-size: 15px;
-  color: #afafaf;
-}
-
-.reservation-form #reservation-form input,
-.reservation-form #reservation-form select {
-  width: 100%;
-  height: 46px;
-  background-color: transparent;
-  border-radius: 23px;
-  border: 1px solid #e0e0e0;
-  padding: 0px 20px;
-  cursor: pointer;
-  margin-bottom: 30px;
-}
-
-.reservation-form #reservation-form input.date {
-  color: #aaa;
-}
-
-.reservation-form #reservation-form button {
-  font-size: 14px;
-  color: #fff;
-  background-color: #22b3c1;
-  border: 1px solid #22b3c1;
-  padding: 12px 30px;
-  width: 100%;
-  text-align: center;
-  display: inline-block;
-  border-radius: 25px;
-  font-weight: 500;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-  transition: all .3s;
+.john-image{
   position: relative;
-  overflow: hidden;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 700px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
-.reservation-form #reservation-form button:hover {
-  opacity: 0.8;
+.john-last-image{
+  position: relative;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.john-second-text{
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
+  display: block;
+  color: white;
+  font-size: 18px;
+}
+
+.paul-title{
+  color:white;
+  font-size: 36px;
+  margin-top: 70px;
+  padding: 0px 0px 0px 32px;
+}
+
+.paul-first-text{
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
+  display: block;
+  color: white;
+  font-size: 18px;
+}
+
+.paul-image{
+  position: relative;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 700px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.paul-last-image{
+  position: relative;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.paul-second-text{
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
+  display: block;
+  color: white;
+  font-size: 18px;
+}
+
+.george-title{
+  color:white;
+  font-size: 36px;
+  margin-top: 70px;
+  padding: 0px 0px 0px 32px;
+}
+
+.george-first-text{
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
+  display: block;
+  color: white;
+  font-size: 18px;
+}
+
+.george-image{
+  position: relative;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 700px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.george-last-image{
+  position: relative;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.george-second-text{
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
+  display: block;
+  color: white;
+  font-size: 18px;
+}
+
+.ringo-title{
+  color:white;
+  font-size: 36px;
+  margin-top: 70px;
+  padding: 0px 0px 0px 32px;
+}
+
+.ringo-first-text{
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
+  display: block;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 38px;
+}
+
+.ringo-image{
+  position: relative;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 700px;
+  width: 60%;
+  margin: auto;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.ringo-last-image{
+  position: relative;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.ringo-second-text{
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
+  display: block;
+  color: white;
+  font-size: 18px;
 }
 
 

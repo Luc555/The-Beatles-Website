@@ -173,6 +173,7 @@ Header Style
 --------------------------------------------- 
 */
 
+
 .background-header {
   background-color: #22b3c1 !important;
   left: 0;
@@ -215,7 +216,7 @@ Header Style
   justify-content: center;
   vertical-align: middle;
   margin-top: 15px;
-  margin-left: 300px;
+  margin-left: 340px;
 }
 
 .header-area .main-nav .nav li a {
@@ -654,7 +655,7 @@ Albums Page Style
 --------------------------------------------- 
 */
 
-.about-main-content {
+.album-main-content {
   margin-top: 70px;
   background-image: url(../images/beatles-apple-corp.webp);
   background-attachment: fixed;
@@ -676,7 +677,7 @@ Albums Page Style
   z-index: 1;
 }
 
-.about-main-content .content {
+.album-main-content .content {
   border-radius: 23px;
   text-align: center;
   padding: 120px 60px;
@@ -685,7 +686,7 @@ Albums Page Style
   z-index: 2;
 }
 
-.about-main-content .content h2 {
+.album-main-content .content h2 {
   color: #fff;
   position: relative;
   z-index: 2;
@@ -1145,7 +1146,7 @@ body {
     text-align: center;
   }
 
-  .about-main-content .content p {
+  .album-main-content .content p {
     padding: 0px 5%;
   }
   .container-fluid {

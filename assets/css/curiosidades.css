@@ -456,7 +456,7 @@ Curiosidades Page Style
   }
   
   .text-mark{
-    color: green;
+    color: #4EA8A8;
   }
   .curiosity-content{
     margin-bottom: 200px;
@@ -472,5 +472,87 @@ Curiosidades Page Style
     font-size: 18px;
   }
   
+  .curiosity-content-img-01{
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    margin: 0px 50px 0px 40px;
+    width: auto;
+    vertical-align: middle;  
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    float: right;
+  }
+
+  .curiosity-content-img-02{
+    max-width: 700px;
+    padding: 0px 50px 0px 40px;
+    width: 70%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    float: right;
+  }
+  .curiosity-content-img-03{
+    max-width: 300px;
+    padding: 0px 50px 0px 70px;
+    width: 70%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    float: right;
+  }
+  .curiosity-content-img-04{
+    max-width: 800px;
+    margin: 0px 50px 0px 200px;
+    width: 100%;
+    float: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
-  
+  .curiosity-content-img-05{
+    max-width: 350px;
+    padding: 0px 50px 0px 70px;
+    width: 70%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    float: left;
+  }
+  .curiosity-content-img-06{
+    max-width: 500px;
+    padding: 0px 50px 0px 70px;
+    width: 70%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    float: left;
+  }
+
+  .curiosity-content-img-07{
+    max-width: 300px;
+    padding: 0px 50px 0px 40px;
+    width: 70%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    float: right;
+  }
+
+  .curiosity-content-img-08{
+    max-width: 1200px;
+    padding: 0px 50px 0px 40px;
+    margin: 0px 50px 0px 200px;
+    width: 70%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  .curiosity-content-img-09{
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    margin: 0px 50px 0px 40px;
+    width: auto;
+    vertical-align: middle;  
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    float: right;
+  }

@@ -5,7 +5,7 @@
   }
   
   .label {
-    background-color: #111;
+    background-color: var(--bg);
     border-radius: 20px;
     cursor: pointer;
     display: flex;

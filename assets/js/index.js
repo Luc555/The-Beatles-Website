@@ -24,3 +24,4 @@ $('nav .controls label').click(function() {
   clearInterval(bannerTimer);
   bannerTimer = setInterval(bannerSwitcher, 5000)
 });
+

@@ -1,0 +1,87 @@
+
+  .name-title-lucas{
+    text-align: center;
+    color: #f65921 !important;
+  }
+
+
+.about-cotent-container-text-authors-title{
+    color: var(--color-text);
+    margin: 50px 0px 20px 50px;
+}
+
+.about-cotent-container-text{
+    margin: 90px 70px 20px 30px;
+}
+.about-cotent-container-text-title{
+    color: var(--color-text);
+    margin-bottom: 15px;
+}
+.about-cotent-container-text-paragraph{
+    color: var(--color-text);
+}
+
+.lucas-picture{
+    width: 319px;
+    height: 319px;
+    --animation-custom_in-translate_x: 50px;
+    --animation-custom_in-translate_y: 0px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 180deg;
+    --animation-custom_in-scale: 0.3;
+    margin: 20px auto 0;
+    border-radius: 50% !important;
+    border-color: #555c66;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.lucas{
+    margin-bottom: 100px;
+}
+
+.about-cotent-container-text-authors-text{
+    text-align: center;
+}
+
+.about-cotent-container-text-authors-text-fa-paragraph{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Inter,sans-serif;
+    line-height: 2;
+    color: var(--color-text);
+    width: 813px;
+    --animation-custom_in-translate_x: 0px;
+    --animation-custom_in-translate_y: 300px;
+    margin: 20px auto 0
+}
+
+
+
+.nicolas-picture{
+    width: 319px;
+    height: 319px;
+    --animation-custom_in-translate_x: 50px;
+    --animation-custom_in-translate_y: 0px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 180deg;
+    --animation-custom_in-scale: 0.3;
+    margin: 20px auto 0;
+    border-radius: 50% !important;
+    border-color: #555c66;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.name-title-nicolas{
+    text-align: center;
+    color: #f65921 !important;
+  }
+
+.nicolas{
+    margin-bottom: 100px;
+}

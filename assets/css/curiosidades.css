@@ -6,7 +6,7 @@ Curiosidades Page Style
 */
 
 .page-heading {
-    background-image: url(./images/john-lennon-the-beatles.gif);
+    background-image: url(./assets/images/john-lennon-the-beatles.gif);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 260px 0px 190px 0px;

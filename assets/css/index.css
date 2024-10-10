@@ -1,124 +1,22 @@
-/* 
----------------------------------------------
-Cookie Style
---------------------------------------------- 
-*/
-
-.CookieMessage {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #121212;
-  z-index: 999;
-  display: none;
-  padding: 15px;
-  font-size: 12px;
-}
-
-.CookieMessage-content {
-  color: var(--color-text);
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 10px;
-  font-family: sans-serif;
-  line-height: 1.5;
-}
-
-.CookieMessage-content a {
-  color: var(--color-text);
-}
-
-.CookieMessage-button {
-  background: #00C2FF;
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px 15px;
-  border-radius: 5px;
-  text-transform: uppercase;
-}
-
-.CookieMessage-button:hover {
-  background: #5cd9ff;
-}
-
-/* 
----------------------------------------------
-Header Style
---------------------------------------------- 
-*/
-
-.header-area {
-  background-color: #22b3c1;
-  padding: 15px;
-}
-
-.header-area .main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-area .main-nav .nav {
-  display: flex;
-}
-
-.header-area .main-nav .nav li {
-  padding: 0 15px;
-}
-
-/* 
----------------------------------------------
-Banner Style
---------------------------------------------- 
-*/
-
-#section-1 {
-  margin-top: 30px;
-  height: auto; /* Ajuste para permitir que o conteúdo defina a altura */
-  color: #fff;
-  background-color: #222;
-  position: relative;
-  padding: 20px; /* Adicione um pouco de padding */
-}
-
-#section-1 .content-slider {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-#section-1 .content-slider .slider {
-  position: relative;
-  overflow: hidden;
-}
-
-#section-1 .content-slider .slider .banner {
-  position: relative;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-#section-1 .content-slider nav {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* 
----------------------------------------------
-Responsive Styles
---------------------------------------------- 
-*/
-
-/* Estilos gerais para dispositivos móveis */
+/* Geral */
 body {
   overflow-x: hidden;
 }
 
-/* Responsividade para telas pequenas (até 576px) */
+/* Telas muito pequenas (até 320px) */
+@media (max-width: 320px) {
+  .header-area,
+  .CookieMessage,
+  #section-1 {
+    padding: 5px;
+  }
+
+  .header-area .main-nav .nav li {
+    padding: 5px;
+  }
+}
+
+/* Telas pequenas (320px até 576px) */
 @media (max-width: 576px) {
   .CookieMessage {
     padding: 10px;
@@ -129,58 +27,46 @@ body {
     padding: 10px;
   }
 
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
-    font-size: 14px;
-  }
-
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
-    font-size: 24px;
-  }
-
   .header-area {
     padding: 10px;
   }
 
   .header-area .main-nav .nav {
-    flex-direction: column; /* Empilhar itens do menu */
+    flex-direction: column;
   }
 
   .header-area .main-nav .nav li {
-    padding: 10px 0; /* Ajustar padding */
-    text-align: center; /* Centralizar texto */
+    padding: 10px 0;
+    text-align: center;
   }
 }
 
-/* Responsividade para telas médias (até 768px) */
+/* Telas médias (576px até 768px) */
 @media (max-width: 768px) {
   #section-1 .more-info {
-    padding: 20px; 
+    padding: 20px;
     margin-top: 20px;
-    border-radius: 15px; /* Ajustar bordas */
-  }
-
-  #section-1 .content-slider nav .controls label {
-    width: 30%; /* Ajustar a largura dos botões */
+    border-radius: 15px;
   }
 
   .header-area .main-nav .nav {
-    flex-direction: column; /* Empilhar itens do menu */
-    width: 100%; /* A largura ocupa 100% */
+    flex-direction: column;
+    width: 100%;
   }
 }
 
-/* Responsividade para telas grandes (até 992px) */
+/* Telas grandes (768px até 992px) */
 @media (max-width: 992px) {
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {
-    padding-top: 60px; /* Ajustar padding */
+    padding-top: 60px;
   }
 
-  #section-1 .content-slider nav .controls label {
-    width: 20%; /* Ajustar a largura dos botões */
+  .header-area .main-nav .nav li {
+    padding: 10px;
   }
 }
 
-/* Responsividade para telas muito grandes (até 1200px) */
+/* Telas muito grandes (992px até 1200px) */
 @media (max-width: 1200px) {
   #section-1 .more-info h4 span {
     font-size: 12px;
@@ -188,5 +74,20 @@ body {
 
   #section-1 .more-info h4 {
     font-size: 15px;
+  }
+}
+
+/* Telas gigantes (acima de 1200px) */
+@media (min-width: 1200px) {
+  .header-area {
+    padding: 20px 30px;
+  }
+
+  .header-area .main-nav .nav li {
+    padding: 0 20px;
+  }
+
+  #section-1 {
+    padding: 40px;
   }
 }

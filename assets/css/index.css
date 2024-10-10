@@ -84,13 +84,16 @@ body {
 }
 
 #section-1 .content-slider .slider .banner {
-  position: relative;
+  position: absolute;
   opacity: 0;
   transition: opacity 0.5s ease;
+  width: 100%;
+  height: auto;
 }
 
-#section-1 .content-slider .slider .banner:target {
+#section-1 .content-slider input:checked + .slider .banner {
   opacity: 1;
+  position: relative;
 }
 
 #section-1 .content-slider nav {
@@ -132,62 +135,4 @@ body {
   }
 
   .header-area .main-nav .nav {
-    flex-direction: column;
-  }
-
-  .header-area .main-nav .nav li {
-    padding: 10px 0;
-    text-align: center;
-  }
-}
-
-/* Telas médias (576px até 768px) */
-@media (max-width: 768px) {
-  #section-1 .more-info {
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 15px;
-  }
-
-  .header-area .main-nav .nav {
-    flex-direction: column;
-    width: 100%;
-  }
-}
-
-/* Telas grandes (768px até 992px) */
-@media (max-width: 992px) {
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
-    padding-top: 60px;
-  }
-
-  .header-area .main-nav .nav li {
-    padding: 10px;
-  }
-}
-
-/* Telas muito grandes (992px até 1200px) */
-@media (max-width: 1200px) {
-  #section-1 .more-info h4 span {
-    font-size: 12px;
-  }
-
-  #section-1 .more-info h4 {
-    font-size: 15px;
-  }
-}
-
-/* Telas gigantes (acima de 1200px) */
-@media (min-width: 1200px) {
-  .header-area {
-    padding: 20px 30px;
-  }
-
-  .header-area .main-nav .nav li {
-    padding: 0 20px;
-  }
-
-  #section-1 {
-    padding: 40px;
-  }
-}
+   [_{{{CITATION{{{_1{](https://github.com/devonChurch/matcha-ice-cream/tree/166f2293a03a436d841e79ffabc651b34745ae2e/build%2Findex.js)[_{{{CITATION{{{_2{](https://github.com/agantal864/Php-webpage/tree/209ceaaa93e0d5106b0e16b6918c489a751f8f77/blog-header.php)[_{{{CITATION{{{_3{](https://github.com/semikolan-dev/blog.semikolan.co/tree/0f1bc19c768dbfa4b89103d62669fd3bf66f17dc/resources%2Fviews%2Fwelcome.blade.php)[_{{{CITATION{{{_4{](https://github.com/gafc2001/citytours/tree/5139354ca93c5aa13f12b605a8c310a0907a9b02/resources%2Fviews%2Findex.blade.php)[_{{{CITATION{{{_5{](https://github.com/phanivittal/Aadhrita/tree/f844def9152bbfe7db28f22415be409df20b6cac/php%2Ftechnical%2Findex.php)

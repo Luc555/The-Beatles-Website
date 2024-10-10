@@ -53,7 +53,6 @@ Cookie Style
     background-color: #333;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px;

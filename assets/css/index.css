@@ -185,6 +185,7 @@ Banner Style
 */
 
 #section-1 {
+  flex: 1; /* Faz com que a seção ocupe o espaço restante */	
   margin-top: 30px;
   height: 600px;
   min-height: 600px;
@@ -524,6 +525,7 @@ body {
 /* Estilos para telas grandes */
 @media (min-width: 1201px) {
   #section-1 {
+    flex: 1; /* Faz com que a seção ocupe o espaço restante */	  
     height: 800px; /* Aumentar a altura do banner */
   }
 

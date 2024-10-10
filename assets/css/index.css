@@ -3,6 +3,106 @@ body {
   overflow-x: hidden;
 }
 
+/* Cookie Message */
+.CookieMessage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #121212;
+  z-index: 999;
+  display: none;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.CookieMessage-content {
+  color: var(--color-text);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.CookieMessage-content a {
+  color: var(--color-text);
+}
+
+.CookieMessage-button {
+  background: #00C2FF;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.CookieMessage-button:hover {
+  background: #5cd9ff;
+}
+
+/* Header */
+.header-area {
+  background-color: #22b3c1;
+  padding: 15px;
+}
+
+.header-area .main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-area .main-nav .nav {
+  display: flex;
+}
+
+.header-area .main-nav .nav li {
+  padding: 0 15px;
+}
+
+/* Banner */
+#section-1 {
+  margin-top: 30px;
+  height: auto;
+  color: #fff;
+  background-color: #222;
+  position: relative;
+  padding: 20px;
+}
+
+#section-1 .content-slider {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#section-1 .content-slider .slider {
+  position: relative;
+  overflow: hidden;
+}
+
+#section-1 .content-slider .slider .banner {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#section-1 .content-slider .slider .banner:target {
+  opacity: 1;
+}
+
+#section-1 .content-slider nav {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsividade */
+
 /* Telas muito pequenas (até 320px) */
 @media (max-width: 320px) {
   .header-area,

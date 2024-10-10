@@ -185,8 +185,8 @@ Banner Style
 */
 
 #section-1 {
-  flex: 1; /* Faz com que a seção ocupe o espaço restante */	
   margin-top: 30px;
+  height: 600px;
   min-height: 600px;
   color: #fff;
   background-color: #222;
@@ -519,44 +519,4 @@ body {
   .container-fluid {
     padding: 0px;
   }
-}
-
-/* Estilos para telas grandes */
-@media (min-width: 1201px) {
-  #section-1 {
-    flex: 1; /* Faz com que a seção ocupe o espaço restante */	  
-  }
-
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
-    font-size: 60px; /* Aumentar o tamanho do texto */
-  }
-
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
-    font-size: 25px; /* Ajustar o tamanho do subtítulo */
-  }
-
-  #section-1 .content-slider nav .controls {
-    width: 50%; /* Ajustar a largura dos controles */
-  }
-
-  #section-1 .content-slider nav .controls label {
-    width: 20%; /* Ajustar a largura dos botões de controle */
-  }
-
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
-    padding: 20px; /* Adicionar espaçamento */
-  }
-}
-
-/* Melhoria geral do layout */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif; /* Certifique-se de usar a fonte correta */
-}
-
-/* Remover qualquer overflow desnecessário */
-.container {
-  max-width: 1200px; /* Limitar a largura do container principal */
-  margin: 0 auto; /* Centralizar o container */
 }

@@ -264,26 +264,26 @@ Banner Style
 #section-1 .content-slider .slider #top-banner-1 {
   background: url('../images/John-Lennon2.jpg') no-repeat center center;
   background-size: cover;
-  height: 700px;
+  height: 100%;
 
 }
 #section-1 .content-slider .slider #top-banner-2 {
   background: url('../images/Paul_macca.jpg') no-repeat bottom center;
   background-size: cover;
   width: 100%;
-  height: 700px;
+  height: 100%;
 }
 #section-1 .content-slider .slider #top-banner-3 {
   background: url('../images/GeorgeH.png') no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 700px;
+  height: 100%;
 }
 #section-1 .content-slider .slider #top-banner-4 {
   background: url('../images/ringostarr.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 700px;
+  height: 100%;
 }
 
 

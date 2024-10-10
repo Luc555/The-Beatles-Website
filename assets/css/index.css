@@ -66,8 +66,16 @@ Cookie Style
     border-radius: 0px;
   }
   .header-area .main-nav .nav {
-    height: auto;
-    flex-basis: 100%;
+    display: flex;
+    flex-basis: 80%;
+    justify-content: center;
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-top: 15px;
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    max-width: 100%; /* Garante que o menu não ultrapasse a largura da tela */
+    padding: 0 20px; /* Adiciona um pouco de espaço nas laterais */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
   }
   .header-area .main-nav{
     position: absolute;

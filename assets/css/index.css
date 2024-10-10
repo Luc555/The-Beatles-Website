@@ -391,132 +391,95 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 575px) {
-
+/* Estilo do Menu Hamburger */
+.header-area .menu-trigger {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 
+.header-area .menu-trigger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+
+/* Menu */
+.header-area .main-nav .nav {
+  display: none; /* Oculta o menu inicialmente */
+  flex-direction: column;
+  width: 100%;
+  background-color: #22b3c1; /* Fundo do menu */
+}
+
+.header-area .main-nav.active .nav {
+  display: flex; /* Mostra o menu quando ativo */
+}
+
+/* Estilos dos Links do Menu */
+.header-area .main-nav .nav li {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.header-area .main-nav .nav li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px; /* Ajuste do padding */
+  color: #1e1e1e;
+  text-align: center;
+  display: block;
+}
+
+/* Efeito de Transformação do Menu Hamburger */
+.header-area .main-nav.active .menu-trigger .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg); /* Primeiro barra se transforma */
+}
+
+.header-area .main-nav.active .menu-trigger .bar:nth-child(2) {
+  opacity: 0; /* Segundo barra desaparece */
+}
+
+.header-area .main-nav.active .menu-trigger .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg); /* Terceiro barra se transforma */
+}
+
+/* Ajustes para celulares (max-width: 767px) */
 @media (max-width: 767px) {
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
-    padding-top: 120px;
+  /* Banner */
+  #section-1 {
+    height: auto; /* Ajustamos para permitir flexibilidade */
+    min-height: 400px; /* Altura mínima para celulares */
   }
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
-    font-size: 15px;
-  }
+
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
-    font-size: 36px;
+    font-size: 30px; /* Diminuímos o tamanho da fonte */
   }
-  #section-1 .more-info {
-    padding: 30px;
-    margin-top: 30px !important;
-    border-radius: 23px;
-    bottom: 110px;
-    width: 95%;
-    left: 2.5%;
-  }
-  #section-1 .more-info i {
-    width: 36px;
-    height: 36px;
-    line-height: 34px;
-    font-size: 18px;
-    margin-right: 10px;
-    margin-top: 8px;
-  }
-  .visit-country .right-content .main-button a {
-    font-size: 14px;
-    padding: 12px 15px;
-  }
-  .main-button a {
-    text-align: center;
-  }
-  #section-1 .more-info h4 {
-    font-size: 14px !important;
-  }
-  #section-1 .content-slider nav .controls label { 
-    width: 7% !important;
-  }
-  .visit-country .right-content ul li {
-    width: 30%;
-  }
-  .visit-country .right-content h4 {
-    margin-top: 20px;
-  }
-}
 
-@media (max-width: 992px) {
-  #section-1 .more-info {
-    margin-top: 60px;
-  }
-  #section-1 .more-info h4 span {
-    font-size: 15px;
-  }
-  #section-1 .more-info h4 {
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  #section-1 .main-button {
-    text-align: left;
-  }
   #section-1 .content-slider nav .controls label {
-    width: 15%;
-  }
-  .visit-country .right-content ul li {
-    width: 30% !important;
-  }
-  .visit-country .right-content {
-    position: relative;
-  }
-  
-  .visit-country .side-bar-map {
-    margin-left: 0px;
-    margin-top: 60px;
-  }
-  h2,
-  h4 {
-    text-align: center;
+    width: 20%; /* Aumentamos a largura dos controles */
+    font-size: 14px; /* Ajustamos o tamanho da fonte */
   }
 
-  .album-main-content .content p {
-    padding: 0px 5%;
-  }
-  .container-fluid {
-    padding: 0px;
-  }
-  .left-image {
-    margin-right: 0px;
-    margin-bottom: 60px;
-  }
-  .search-form #search-form h4 {
-    margin-bottom: 15px;
-  }
-  .search-form #search-form select {
-    margin-bottom: 30px;
-  }
-  .amazing-deals .image {
-    border-top-right-radius: 23px;
-    border-bottom-left-radius: 0px;
-  }
-  .amazing-deals {
-    padding-right: 0px;
-  }
-  .amazing-deals .content {
-    padding: 30px !important;
-  }
-  .more-info {
-    margin-bottom: 30px;
-  }
-  .reservation-form #reservation-form {
-    padding: 45px 30px;
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
+    padding-top: 80px; /* Ajuste de padding para a responsividade */
   }
 }
 
-@media (max-width: 1200px) {
-  #section-1 .more-info h4 span {
-    font-size: 12px;
+/* Ajustes para dispositivos menores (max-width: 575px) */
+@media (max-width: 575px) {
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
+    font-size: 24px; /* Tamanho da fonte ainda menor */
   }
-  #section-1 .more-info h4 {
-    font-size: 15px;
-  }
-  .container-fluid {
-    padding: 0px;
+
+  #section-1 .more-info {
+    padding: 15px; /* Ajuste de padding para a seção de mais informações */
+    margin-top: 20px !important;
   }
 }

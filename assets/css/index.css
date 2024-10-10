@@ -47,143 +47,70 @@ Cookie Style
   background: #5cd9ff;
 }
 
-@media (max-width: 1200px) {
-  .header-area .main-nav .nav li {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .header-area .main-nav:before {
-    display: none;
-  }
+
+.main-nav {
+    height: 100vh; /* 100% da altura da tela */
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-@media (max-width: 992px) {
-  .header-area {
-    top: 0;
-  }
-  .header-area .main-nav {
-    background-color: transparent;
-    border-radius: 0px;
-  }
-  .header-area .main-nav .nav {
-    display: flex;
-    flex-basis: 80%;
-    justify-content: center;
-    align-items: center; /* Alinha verticalmente os itens */
-    margin-top: 15px;
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
-    max-width: 100%; /* Garante que o menu não ultrapasse a largura da tela */
-    padding: 0 20px; /* Adiciona um pouco de espaço nas laterais */
-    box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
-  }
-  .header-area .main-nav{
-    position: absolute;
-    left: 30px;
-    top: 15px;
-  }
-  .background-header .main-nav{
-    top: 0px;
-  }
-  .background-header .main-nav  {
-    top: 0px !important;
-  }
-  .header-area .main-nav {
-    position: absolute;
-    top: 15px;
-    right: 70px;
-  }
-  .header-area.header-sticky .nav li a:hover,
-  .header-area.header-sticky .nav li a.active {
-    color: #22b3c1!important;
-    opacity: 1;
-  }
-  .header-area.header-sticky .nav li.search-icon a {
-    width: 100%;
-  }
-  .header-area {
-    background-color: #22b3c1;
-    padding: 0px 15px;
-    height: 100px;
-    box-shadow: none;
-    text-align: center;
-    margin-left: 0px;
-  }
-  .header-area .menu-trigger {
-    display: block !important;
-  }
-  .header-area .main-nav {
-    overflow: hidden;
-  }
-  .header-area .main-nav .nav {
-    float: none;
-    width: 100%;
-    display: none;
-    -webkit-transition: all 0s ease 0s;
-    -moz-transition: all 0s ease 0s;
-    -o-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    margin-left: 0px;
-  }
-  .header-area.header-sticky .nav {
-    margin-top: 85px !important;
-  }
-  .background-header.header-sticky .nav {
-    margin-top: 70px !important;
-  }
-  .header-area .main-nav .nav li:first-child {
-    border-top: 1px solid #eee;
-  }
-  .header-area .main-nav .nav li {
-    width: 100%;
-    background: #f7f7f7;
-    border-bottom: 1px solid #eee;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-  .header-area .main-nav .nav li a {
-    height: 50px !important;
-    line-height: 50px !important;
-    padding: 0px !important;
-    border: none !important;
-    background: #f7f7f7 !important;
-    color: #1e1e1e !important;
-  }
-  .header-area .main-nav .nav li a:hover {
-    background: #f7f7f7 !important;
-    color: #22b3c1!important;
-  }
-  .header-area .main-nav .nav li.has-sub ul.sub-menu {
-    position: relative;
-    visibility: inherit;
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0%);
-    top: 0px;
-    width: 100%;
-    box-shadow: none;
-    height: 0px;
-    transition: all 0s;
-  }
-  .header-area .main-nav .nav li.submenu ul li a {
-    font-size: 12px;
-    font-weight: 400;
-  }
-  .header-area .main-nav .nav li.submenu ul li a:hover:before {
-    width: 0px;
-  }
-  .header-area .main-nav .nav li.has-sub ul.sub-menu {
+.logo img {
+    max-width: 100%;
     height: auto;
-  }
-  .header-area .main-nav .nav li.has-sub:after {
-    color: #3B566E;
-    right: 30px;
-    font-size: 14px;
-    top: 15px;
-  }
-  .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
-    height: 0px;
-  }
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav li {
+    margin: 10px 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-trigger {
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+
+.menu-trigger span {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .main-nav {
+        height: auto; /* Ajustar a altura para maior do que 600px */
+    }
+    
+    .nav {
+        flex-direction: row;
+    }
+    
+    .nav li {
+        margin: 0 20px;
+    }
+    
+    .menu-trigger {
+        display: none; /* Esconder o menu-trigger em telas maiores */
+    }
 }
 
 /* 
